@@ -23,21 +23,24 @@ let me = {name: 'Mary', age: '19'}
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
+let favoriteThings = {band: 'My Chemical Romance', food: 'Tonkotsu Ramen', person:'David', book:'Vampire Hunter D', movie: 'Parasite', holiday: 'Halloween'};
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
+favoriteThings.car = 'Toyota AE86';
+favoriteThings.brand = 'Trader Joes?'
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
+
 
 /// ////////////// PROBLEM 3 ///////////////////
 
@@ -69,7 +72,10 @@ let shoppingCart = {};
   It should add a new key-value pair to the cart with the item and quantity.
 */
 
-//Code Here
+function addToCart(item, quantity) {
+  const addToCart = {item, quantity}
+  return addToCart
+}
 
 /// ////////////// PROBLEM 5 ///////////////////
 
