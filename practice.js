@@ -74,7 +74,7 @@ let shoppingCart = {};
 
 function addToCart(item, quantity) {
   const addToCart = {item, quantity}
-  return addToCart
+  return addToCart;
 }
 
 /// ////////////// PROBLEM 5 ///////////////////
@@ -85,7 +85,14 @@ function addToCart(item, quantity) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10 (obj) {
+  for (const value in obj) {
+    if (obj[value] > 10) {
+      obj[value] = 0
+    }
+  }
+  return greaterThan10
+}
 
 /// ////////////// PROBLEM 6 ///////////////////
 
