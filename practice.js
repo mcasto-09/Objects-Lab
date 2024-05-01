@@ -101,8 +101,12 @@ function greaterThan10 (obj) {
   Write a for...in loop that loops over the object and changes every value to be itself multiplied by 2.
   Return the updated object.
 */
-
-//Code Here
+function double (obj){
+  for (const key in obj) {
+   obj[key] *= 2
+  } 
+  return obj;
+ }
 
 /// ////////////// PROBLEM 7 ///////////////////
 
@@ -111,7 +115,11 @@ function greaterThan10 (obj) {
 */
 
 function showValues(obj) {
-  //Code Here
+  let valueString = '';
+  for (const key in obj) {
+    valueString += obj[key]
+  }
+  return valueString;
 }
 
 /// ////////////// PROBLEM 8 ///////////////////
@@ -121,8 +129,13 @@ function showValues(obj) {
   The object should have 3 keys whose names match the parameters.
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
-
-//Code Here
+function makeCard (cardNumber, expirationDate, securityCode){
+  return {
+  cardNumber: cardNumber,
+  expirationDate: expirationDate,
+  securityCode: securityCode
+  }
+}
 
 /// ////////////// PROBLEM 9 ///////////////////
 
@@ -131,7 +144,10 @@ function showValues(obj) {
   Delete the property password and return the object.
 */
 
-//Code Here
+function removePassword(obj) {
+  delete obj.password;
+  return obj
+}
 
 /// ////////////// PROBLEM 10 ///////////////////
 
