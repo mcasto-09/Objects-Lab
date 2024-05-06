@@ -235,7 +235,11 @@ function totalPopulation (obj) {
   Return false otherwise.
 */
 
-//Code Here
+function usCanadaBorder (coordinates) {
+  const [latitude, longitude] = coordinates;
+  return latitude === 49 && longitude >= -123 && longitude <= -95
+}
+
 
 /// ////////////// PROBLEM 15 ///////////////////
 
@@ -281,7 +285,16 @@ const employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater () {
+  const newEmployees = employees.filter((employee) => employee.firstName !== 'Theo')
+  for (const employee of newEmployees) {
+    if (employee.firstName === 'Lorie') {
+      employee.department = 'HR';
+    }
+  }
+  return newEmployees;
+}
+
 
 /// ////////////// PROBLEM 16 ///////////////////
 
@@ -307,9 +320,9 @@ const cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
-let grumpyActivity;
-let fluffy2ndFriend;
+
+let grumpyActivity = 'eat food'
+let fluffy2ndFriend = 'Lazy Bones'
 
 /// ////////////// PROBLEM 17 ///////////////////
 
@@ -347,7 +360,11 @@ const myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+function recordCleaner() {
+  for (const accident of myCar.accidents) {
+    accident.atFaultForAccident = false;
+  }
+}
 
 /// ////////////// PROBLEM 18 ///////////////////
 
@@ -365,7 +382,9 @@ const myCar = {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+function largeNumbers({first, second, third}) {
+  return Math.min(first, second, third);
+}
 
 /// ////////////// PROBLEM 19 ///////////////////
 
