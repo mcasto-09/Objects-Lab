@@ -101,22 +101,12 @@ function greaterThan10 (obj) {
   Write a for...in loop that loops over the object and changes every value to be itself multiplied by 2.
   Return the updated object.
 */
-<<<<<<< Updated upstream
 function double (obj){
   for (const key in obj) {
    obj[key] *= 2
   } 
   return obj;
  }
-=======
-
-function double(obj) {
-  for (const value in obj) {
-    
-  }
-
-}
->>>>>>> Stashed changes
 
 /// ////////////// PROBLEM 7 ///////////////////
 
