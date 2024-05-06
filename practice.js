@@ -61,7 +61,8 @@ const user2 = {
   Make that change without editing the code above.
 */
 
-//Code Here
+user2.name = 'Bryan G. Smith';
+user2.email = 'bryan.smith@devmounta.in';
 
 /// ////////////// PROBLEM 4 ///////////////////
 
@@ -73,8 +74,7 @@ let shoppingCart = {};
 */
 
 function addToCart(item, quantity) {
-  const addToCart = {item, quantity}
-  return addToCart;
+  shoppingCart[item] = quantity
 }
 
 /// ////////////// PROBLEM 5 ///////////////////
@@ -86,12 +86,12 @@ function addToCart(item, quantity) {
 */
 
 function greaterThan10 (obj) {
-  for (const value in obj) {
-    if (obj[value] > 10) {
-      obj[value] = 0
+  for (const key in obj) {
+    if (obj[key] > 10) {
+      obj[key] = 0
     }
   }
-  return greaterThan10
+  return obj
 }
 
 /// ////////////// PROBLEM 6 ///////////////////
@@ -164,8 +164,11 @@ const deleteTheBigNumbers = {
   Write a for...in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-//Code Here
-
+for (let key in deleteTheBigNumbers) {
+  if (deleteTheBigNumbers[key] > 100) {
+    delete deleteTheBigNumbers[key];
+  }
+}
 /*
   Once you complete a problem, refresh ./destructuring.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
