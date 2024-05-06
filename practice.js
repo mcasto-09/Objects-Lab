@@ -362,7 +362,7 @@ const myCar = {
 
 function recordCleaner() {
   for (const accident of myCar.accidents) {
-    accident.atFaultForAccident = false;
+    accident.atFaultForAccident = false
   }
 }
 
@@ -383,7 +383,7 @@ function recordCleaner() {
 */
 
 function largeNumbers({first, second, third}) {
-  return Math.min(first, second, third);
+  return Math.min(first, second, third)
 }
 
 /// ////////////// PROBLEM 19 ///////////////////
@@ -394,4 +394,9 @@ function largeNumbers({first, second, third}) {
   Find the longest array and return that array.
 */
 
-//Code Here
+function numberGroups({a, b, c}) {
+  if (a.length > b.length) {
+    return a.length > c.length ? a : c
+  }
+  return b.length > c.length ? b : c;
+}
